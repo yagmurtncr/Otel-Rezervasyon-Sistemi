@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="502.0" prefWidth="810.0" style="-fx-background-color: #6dc6ca;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otelrezervasyonsistemi.LoggedIn">
+   <children>
+      <Button fx:id="btn_login" layoutX="537.0" layoutY="270.0" mnemonicParsing="false" onAction="#loginact" prefHeight="30.0" prefWidth="206.0" style="-fx-background-radius: 10; -fx-background-color: white;" styleClass="button-with-shadow" text="Login" textFill="#6dc6ca">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtfusername" layoutX="537.0" layoutY="173.0" prefHeight="30.0" prefWidth="206.0" style="-fx-background-radius: 10;" styleClass="button-with-shadow" />
+      <Text fx:id="txtusername" fill="WHITE" layoutX="410.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="126.13671875">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtpassword" fill="WHITE" layoutX="410.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtuser" fill="WHITE" layoutX="414.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not a user?" underline="true">
+         <font>
+            <Font name="Cambria Math" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_sign_up" layoutX="671.0" layoutY="332.0" mnemonicParsing="false" onAction="#signupact" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="button-with-shadow" text="Sign Up" textFill="#6dc6ca">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtfpassword" layoutX="537.0" layoutY="219.0" prefHeight="30.0" prefWidth="206.0" style="-fx-background-radius: 10;" styleClass="button-with-shadow" />
+      <Separator layoutX="352.0" layoutY="146.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="95.0" layoutY="356.0" prefWidth="200.0" />
+      <Pane layoutX="86.0" layoutY="134.0" prefHeight="200.0" prefWidth="200.0" styleClass="button-with-shadow">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="194.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/hotel.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

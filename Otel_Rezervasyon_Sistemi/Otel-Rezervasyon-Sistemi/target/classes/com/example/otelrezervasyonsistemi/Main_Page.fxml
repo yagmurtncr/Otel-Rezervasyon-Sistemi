@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #6dc6ca;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otelrezervasyonsistemi.Main_Page">
+   <children>
+      <Button fx:id="About_Button" layoutX="99.0" layoutY="250.0" mnemonicParsing="false" onAction="#about_page" onMouseClicked="#about_page" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="ABOUT" textFill="#6dc6ca" AnchorPane.bottomAnchor="312.4" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="685.8" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="Services_Button" layoutX="361.0" layoutY="250.0" mnemonicParsing="false" onAction="#Services_Page" onMouseClicked="#Services_Page" prefHeight="37.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="SERVICES" textFill="#6dc6ca" AnchorPane.bottomAnchor="312.4" AnchorPane.rightAnchor="423.8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="Rooms_Button" layoutX="621.0" layoutY="249.0" mnemonicParsing="false" onAction="#Rooms_Page" onMouseClicked="#Rooms_Page" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="ROOMS" textFill="#6dc6ca" AnchorPane.leftAnchor="621.0" AnchorPane.topAnchor="249.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="Booking_Button" layoutX="102.0" layoutY="480.0" mnemonicParsing="false" onAction="#Booking_Page" onMouseClicked="#Booking_Page" prefHeight="37.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="BOOKING" textFill="#6dc6ca">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="Changing_Button" layoutX="364.0" layoutY="480.0" mnemonicParsing="false" onAction="#Changing_Page" onMouseClicked="#Changing_Page" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="CHANGING" textFill="#6dc6ca">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="Canceling_Button" layoutX="621.0" layoutY="480.0" mnemonicParsing="false" onAction="#Canceling_Page" onMouseClicked="#Canceling_Page" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="CANCELING" textFill="#6dc6ca">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="92.0" layoutY="105.0" onDragDetected="#about_page" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="677.0" AnchorPane.topAnchor="105.0">
+         <image>
+            <Image url="@../../../pics/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="356.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="413.0" AnchorPane.topAnchor="105.0">
+         <image>
+            <Image url="@../../../pics/customer-service.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="94.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="136.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="675.0" AnchorPane.topAnchor="333.0">
+         <image>
+            <Image url="@../../../pics/hotel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="14131.0" fitWidth="131.0" layoutX="613.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pics/booking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="353.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pics/refresh.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="613.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pics/cancel.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

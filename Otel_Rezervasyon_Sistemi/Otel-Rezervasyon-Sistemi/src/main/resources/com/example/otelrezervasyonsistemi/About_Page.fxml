@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.otelrezervasyonsistemi.Menu.About_Page">
+   <children>
+      <Button fx:id="Menu_Button" layoutX="823.0" layoutY="81.0" mnemonicParsing="false" onAction="#Menu_Page" onMouseClicked="#Menu_Page" prefHeight="46.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-background-radius: 40; -fx-border-radius: 40;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="21.0" />
+         </font></Button>
+      <Text fill="GREY" layoutX="40.0" layoutY="163.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Atel Hotel is the only Villa type hotel located in the Sultanahmet region and the historical peninsula. It was restored in 2005 and converted into a Villa hotel for accommodation in 2008. The kingdom of Sphendon, rising opposite it, is the only unique and oldest Roman period work that was built in the 1st century during the Roman Empire and came to ruin. Villa Sphendone Hotel, located on this quiet street where the life of the traditional Istanbul street, whose historical list of the city has diminished to almost non-existent, is kept alive with all its sections, adds a special color to the hotel as a beautiful example of traditional Turkish architecture. Located on two floors, the 19th century Western With 4 independent rooms spaced with sectional furniture and decorated with traditional Turkish motifs, a lounge and gardens located between two doors opening to the front and back gardens, it creates a safe, comfortable museum environment where personalized service is provided and hosted by the landlady with traditional Turkish hospitality. You can feel it.&quot;" textAlignment="JUSTIFY" wrappingWidth="422.3999557495117">
+         <font>
+            <Font name="Cambria Math" size="16.0" />
+         </font>
+      </Text>
+      <Pane layoutY="-10.0" prefHeight="55.0" prefWidth="900.0" style="-fx-background-color: #6dc6ca;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="380.0" layoutY="13.0" text="ATEL HOTEL" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Math" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="320.0" fitWidth="401.0" layoutX="473.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" styleClass="button-with-shadow">
+         <image>
+            <Image url="@../../../pics/villaotel.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
