@@ -25,6 +25,31 @@ or cancel reservations through a multi-page graphical interface.
 
 ---
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    subgraph View["Presentation (JavaFX / FXML)"]
+        Login["Login · SignUp"]
+        Pages["Rooms · Booking · Cancel · Change · Services"]
+    end
+
+    subgraph Ctrl["Controllers (Java)"]
+        Logic["Reservation logic · MyQueue"]
+    end
+
+    subgraph Data["Data Access"]
+        DB["DatabaseConnection (JDBC)"]
+    end
+
+    Login --> Logic
+    Pages --> Logic
+    Logic --> DB
+    DB --> MySQL[("MySQL<br/>users · rooms")]
+```
+
+---
+
 ## 📁 Project Structure
 
 ```text
